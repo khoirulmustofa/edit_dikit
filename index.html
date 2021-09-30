@@ -141,7 +141,7 @@
     ></script>
     <script>
       $(document).ready(function () {
-        var socket = io("https://wa-api-fbbs.herokuapp.com");
+        var socket = io();
         let no = 0;
         socket.on("message", function (msg) {
           console.log("message : " + msg);
